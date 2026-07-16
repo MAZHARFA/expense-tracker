@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+@import "tailwindcss";
+
+
+
+
+
+@theme{
+  --font-display:"Dancing-script","sans-serif";
+  --breakpoint-3xl:1920px;
+  --color-primary:#875cf5;
+
+}
+@layer base{
+  html{
+    font-family: var(--font-display);
+
+
+  }
+ body {
+  background-color: #fcfbfc;
+  overflow-x: hidden;
+  
+
+ }
+
+}
+
+.input-box{
+  @apply w-full flex justify-between gap-3 text-sm
+}
+
+.btn-primary{
+  @apply w-full text-sm font-medium text-white
+}
+
+.card {
+  @apply bg-white p-6 rounded-2xl shadow-md border border-gray-200;
+}
+
+
+.card-btn{
+  @apply flex items-center gap-3 text-[12px] font-medium text-gray-700
+}
+
+.add-btn{
+  @apply flex items-center  text-xs md:text-sm font-medium text-blue-700 rounded-lg cursor-pointer px-4 py-2;
+}
+
+/* Dark Mode Default */
+:root[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+}
+
+/* Light Mode */
+:root[data-theme="light"] {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+/* Apply globally */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

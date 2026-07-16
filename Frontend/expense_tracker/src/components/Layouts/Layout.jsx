@@ -521,7 +521,7 @@ export default function Landing() {
         <div className="wrap testimonial reveal" ref={addToRefs}>
           <div className="stars">★★★★★</div>
           <blockquote>"I stopped dreading my bank app. Vellum reads like something I'd actually keep — a ledger, not a dashboard trying to sell me something."</blockquote>
-          <cite>— Amara O., freelance designer</cite>
+          <cite>— cusion, freelance designer</cite>
         </div>
       </section>
 
